@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
     void GetRequest(){
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url1 ="http://192.168.0.16/birds/backend/1/pajaro";
+        String url ="http://192.168.0.12:8000/birds/backend/1/pajaro";
         String url2 ="http://10.0.2.16/birds/backend/1/pajaro";
-        String url = "https://cat-fact.herokuapp.com/facts";
+        String url1 = "https://cat-fact.herokuapp.com/facts";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
                 Request.Method.GET,
